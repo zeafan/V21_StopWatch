@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.mohamed.v21_stopwatch.MainActivity">
+
+<at.grabner.circleprogress.CircleProgressView
+    android:id="@+id/circleProgress"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="300dp"
+    android:layout_width="300dp"
+    CircleProgressView:cpv_value="0"
+    CircleProgressView:cpv_maxValue="59"
+    CircleProgressView:cpv_barWidth="10dp"
+    CircleProgressView:cpv_rimWidth="2dp"
+    CircleProgressView:cpv_contourSize="0dp"
+    CircleProgressView:cpv_autoTextSize="true"
+    CircleProgressView:cpv_seekMode="true"
+    CircleProgressView:cpv_unit="sec"
+    CircleProgressView:cpv_unitPosition="right_top"
+    CircleProgressView:cpv_unitScale="1"
+    CircleProgressView:cpv_textScale="1"
+    CircleProgressView:cpv_showUnit="=true"
+    CircleProgressView:cpv_autoTextColor="#8596"
+    />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/circleProgress"
+        android:layout_marginLeft="137dp"
+        android:layout_marginStart="137dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:onClick="Start"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:onClick="Stop"
+        />
+</LinearLayout>
